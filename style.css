@@ -1,0 +1,98 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #3fbdbd;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(107, 106, 106, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+#navbar .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#navbar ul li a:hover {
+    background: #3fbdbd;
+    color: #fff;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+section#home {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #0fe6a5;
+}
+
+section .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+section .content p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+#about {
+    background-color: #e0e0e0;
+}
+
+#services {
+    background-color: #cfcfcf;
+}
+
+#contact {
+    background-color: #bfbfbf;
+}
